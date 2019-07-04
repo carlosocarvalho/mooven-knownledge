@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+
+
+//override variables
+
+$theme-colors: (
+  "primary": #333,
+);
+
+$enable-rounded:              false !default;
+$border-width:                2px !default;
+$table-border-width:          1px !default;
+//@import "../node_modules/bootstrap/scss/functions";
+//@import "../node_modules/bootstrap/scss/variables";
+ html, body {
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+ngb-typeahead-window.dropdown-menu{
+    width: 93%;
+}
+#logo{
+  width: 190px;
+}
+@import '../node_modules/bootstrap/scss/bootstrap';

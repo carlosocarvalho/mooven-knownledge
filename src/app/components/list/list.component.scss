@@ -1,0 +1,25 @@
+.list-component{
+    height: 100%;
+
+    #gravatar{
+        border-radius: 50%;
+        width: 40px;
+    }
+
+    .user-info-repos{
+        display: inline-block;
+        
+    }
+    .link-search{
+        &:hover{
+            text-decoration: none;
+            color: #999;
+        }
+    }
+}
+.header-repos{
+    border-bottom: 1px solid #ddd;
+}
+.section-list{
+    border-top: 1px solid #fff;
+}
