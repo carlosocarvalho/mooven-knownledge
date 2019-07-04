@@ -1,32 +1,23 @@
 <div
   class="d-flex justify-content-center align-items-center show-component bg-light"
 >
-  <div class="col-md-7 d-flex justify-content-center">
+  <div class="col-md-4 d-flex justify-content-center">
     <div class="row">
-      <div class="col-md-12">
-        <div class="card-container">
-          <div class="left"></div>
-          <div class="right"></div>
-          <div class="card">
-            <div class="front">
-              <div class="card-data-frontend ">
-                <div class="logo text-center">
-                  <mooven-logo></mooven-logo>
-                  <p class="p-2">
-                    <strong>
-                      <small>
-                        Bom agora é com você, quer saber um pouco mais sobre esse repositorio ? <br/> Então
-                        posicione o cursor no card.
-                      </small>
-                    </strong>
-                  </p>
-                </div>
-              </div>
-            </div>
-            
-          </div>
+        <div class="col-md-12">
+                <div class="card text-center">
+                        <div class="card-body">
+                          <mooven-logo></mooven-logo>
+                
+                          <p class="card-text mb-5 text-mooven-color">
+                            Legal, mas acreditamos que mostrar a origem das informações, é melhor  do que tentar adivinhar o que você precisa.
+
+                          </p>
+                          <a [routerLink]="['/']" class="card-link"> Volar ao começo </a>
+                          <a href="#" class="card-link">Acessar o Repositório</a>
+                        </div>
+                      </div>
         </div>
-      </div>
+      
     </div>
   </div>
 </div>

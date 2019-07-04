@@ -21,6 +21,7 @@ import {
 } from './components';
 import { PublicComponent } from './layouts/public/public.component';
 import { LogoComponent } from './components/logo/logo.component';
+import { FullUrlPipe } from './pipes/full-url.pipe';
 
 
 
@@ -32,7 +33,8 @@ import { LogoComponent } from './components/logo/logo.component';
     ShowItemComponent,
     SearchComponent,
     PublicComponent,
-    LogoComponent
+    LogoComponent,
+    FullUrlPipe
   ],
   imports: [
     BrowserModule,
