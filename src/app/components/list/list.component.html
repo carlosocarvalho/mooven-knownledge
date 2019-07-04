@@ -46,7 +46,7 @@
                     class="text-danger"
                     title="Acessar o repositório"
                     target="_blank"
-                    href="{{ row.url }}"
+                    href="{{ row.html_url }}"
                   >
                     <fa-icon icon="code-branch"></fa-icon>
                   </a>
@@ -57,7 +57,9 @@
                 <td>{{ row.description }}</td>
                 <td>{{ row.stargazers_count | number }}</td>
                 <td>
-                    <a   title="O que podemos ver sobre esse repo" [routerLink]="[ '/repository/', row.name]">
+                   
+                  <a  [queryParams]="{project: row.html_url}"
+                     title="O que podemos ver sobre esse repo" [routerLink]="[ '/repository/', row.name]">
                        <fa-icon icon="archive"></fa-icon>
                     </a>
                 </td>

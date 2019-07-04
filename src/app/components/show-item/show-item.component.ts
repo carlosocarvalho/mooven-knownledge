@@ -1,5 +1,6 @@
 import { GitService } from './../../services/git.service';
 import { Component, OnInit } from '@angular/core';
+import { Route, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-show-item',
@@ -8,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShowItemComponent implements OnInit {
 
-  constructor(private readonly provider: GitService) { }
+  projectUrl: string;
+  constructor(private readonly provider: GitService,
+    private readonly route: ActivatedRoute) { }
 
   ngOnInit() {
+    this.route.queryParams.subscribe((data: { project: string }) => {
+      if (data.project !== '') {
+        this.projectUrl = data.project
+      }
+    })
+
   }
 
 }
