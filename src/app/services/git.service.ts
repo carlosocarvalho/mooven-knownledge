@@ -30,4 +30,15 @@ export class GitService {
     })
   }
 
+  public findRepositoryInfo(username: string, repo: string) {
+    return this.http.get(`${this.api}repos/${username}/${repo}`, {
+      params: {
+        sort: 'full_name',
+        type: 'owner',
+        direction: 'asc'
+
+      }
+    })
+  }
+
 }

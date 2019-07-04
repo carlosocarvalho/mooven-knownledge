@@ -1,3 +1,4 @@
+import { GitService } from './../../services/git.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShowItemComponent implements OnInit {
 
-  constructor() { }
+  constructor(private readonly provider: GitService) { }
 
   ngOnInit() {
   }

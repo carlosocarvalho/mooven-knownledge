@@ -36,6 +36,7 @@
                 <th scope="col">Nome</th>
                 <th scope="col">Descrição do projeto</th>
                 <th scope="col">Estrelas</th>
+                <th scope="col">#</th>
               </tr>
             </thead>
             <tbody>
@@ -56,7 +57,9 @@
                 <td>{{ row.description }}</td>
                 <td>{{ row.stargazers_count | number }}</td>
                 <td>
-                    <a [routerLink]="[ '/repository/', row. ]">name</a>
+                    <a   title="O que podemos ver sobre esse repo" [routerLink]="[ '/repository/', row.name]">
+                       <fa-icon icon="archive"></fa-icon>
+                    </a>
                 </td>
               </tr>
             </tbody>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'mooven-logo',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LogoComponent implements OnInit {
 
-  constructor() { }
+  constructor(private readonly router: Router) {
+
+  }
 
   ngOnInit() {
   }
+
+  get url() {
+    return location.origin
+  }
+
 
 }

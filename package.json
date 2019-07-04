@@ -7,8 +7,11 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build-ghpages": "ng build --prod --base-href \"https://carlosocarvalho.github.io/mooven-knownledge/\"",
+    "deploy": "gh-pages -d dist/moove-git"
   },
+  "homepage": "https://carlosocarvalho.github.io/mooven-knownledge",
   "private": true,
   "dependencies": {
     "@angular/animations": "~8.0.3",
@@ -26,6 +29,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.9.0",
     "@ng-bootstrap/ng-bootstrap": "^5.0.0-rc.1",
     "bootstrap": "^4.3.1",
+    "gh-pages": "^2.0.1",
     "rxjs": "~6.4.0",
     "tslib": "^1.9.0",
     "zone.js": "~0.9.1"
